@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Instana\OpenTelemetry\\": "src/"
+            "Instana\\OpenTelemetry\\": "src/"
         },
         "files": ["src/Resources/autoload.php"]
     },
