@@ -2,7 +2,7 @@
     "name": "heena/otel-bootstrap-php",
     "description": "A zero-configuration for OpenTelemetry in PHP.",
     "type": "library",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "require": {
         "php": "^8.1",
         "open-telemetry/api": "^1.0",
