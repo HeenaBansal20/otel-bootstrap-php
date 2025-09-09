@@ -1,6 +1,6 @@
 <?php
 
-namespace Instana\OpenTelemetry\Attributes;
+namespace Heena\OpenTelemetry\Attributes;
 
 use OpenTelemetry\SDK\Trace\SpanProcessorInterface;
 use OpenTelemetry\SDK\Trace\ReadWriteSpanInterface;

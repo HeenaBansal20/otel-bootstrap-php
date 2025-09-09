@@ -1,6 +1,6 @@
 <?php
 
-namespace Instana\OpenTelemetry\Factory;
+namespace Heena\OpenTelemetry\Factory;
 
 use OpenTelemetry\API\Globals;
 use OpenTelemetry\Context\Propagation\TextMapPropagatorInterface;
