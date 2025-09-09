@@ -6,7 +6,7 @@ use OpenTelemetry\SDK\Trace\SpanProcessorInterface;
 use OpenTelemetry\SDK\Trace\ReadWriteSpanInterface;
 use OpenTelemetry\SDK\Common\Attribute\Attributes;
 
-class YourCompanyAttributes implements SpanProcessorInterface
+class InstanaAttributes implements SpanProcessorInterface
 {
     public function onStart(ReadWriteSpanInterface $span, Context $parentContext): void
     {
