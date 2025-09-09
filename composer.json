@@ -1,5 +1,5 @@
 {
-    "name": "heena/otel-instana-php",
+    "name": "heena/otel-bootstrap-php",
     "description": "A zero-configuration for OpenTelemetry in PHP.",
     "type": "library",
     "license": "Apache 2.0",
