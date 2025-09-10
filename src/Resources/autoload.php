@@ -10,7 +10,6 @@ if (getenv('OTEL_PHP_AUTO_ENABLE') !== 'false') {
     // 1. BOOTSTRAP THE SDK FIRST!
     // This creates the TracerProvider and registers it globally.
     $tracerProvider = TracerProviderFactory::create();
-    $loggerProvider = LoggerProviderFactory::create(); // You would create this
    //$meterProvider = MeterProviderFactory::create(); // And this    
     // 2. Optional but recommended: Initialize other components
     // For example, set a global LoggerProvider or MeterProvider if you have them.
