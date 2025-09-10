@@ -18,8 +18,7 @@ class TracerProviderFactory
     public static function create(): TracerProvider
     {
         // Use the SDK's built-in configuration to read standard OTEL_* env vars
-        $exporterType = Configuration::getString(Variables::OTEL_TRACES_EXPORTER);
-        $spanExporter = self::createExporter($exporterType);
+        $spanExporter = self::createExporter();
 
         // Build the provider with a batch processor (recommended for production)
   $tracerProvider = (new TracerProviderBuilder())
@@ -32,8 +31,10 @@ class TracerProviderFactory
         return $tracerProvider;
     }
 
-    private static function createExporter(?string $exporterType): SpanExporterInterface
+    private static function createExporter(?string $exporterType = null): SpanExporterInterface
     {
+	        $exporterType = $exporterType ?? 'otlp';
+
         // Default to OTLP if not set, fallback to console for local dev
         switch ($exporterType) {
             case 'otlp':
