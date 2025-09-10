@@ -1,5 +1,7 @@
 <?php
 
+namespace Heena\OpenTelemetry\Resources;
+
 use Heena\OpenTelemetry\Factory\TracerProviderFactory;
 
 // Check if OpenTelemetry is enabled
